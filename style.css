@@ -246,7 +246,7 @@ a:hover{
     color:#25c059;
 }
 .form__input-group{
-    margin: 1rem;
+    margin: 0rem;
 }
 .form__input{
     display: block;
@@ -333,7 +333,7 @@ a:hover{
     top:0px;
     height:100%;
     min-height:56.25vw;
-    width:100%;
+    width:177.77777778vh;
     min-width:100%;
     opacity:0.6;
     z-index:0;
