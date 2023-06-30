@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard UI</title>
+	<link rel="stylesheet" type="text/css" href="admin_panel_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+	<h1 class="logo">A</h1>
+	<i class="fa fa-chevron-left menu-icon"></i>
+	<ul class="sidenav">
+		<li class="active"><i class="fa fa-home"></i><a href="#">Owner Dashboard
+			<span class="span1"><i class="fa fa-angle-right"></i></span>
+		</a>
+	</li>
+
+	<ul class="dropdown">
+		<li><a href="#"><span class="dot"></span> Analytics</a></li>
+		<li><a href="#"><span class="dot"></span> CRM</a></li>
+		<li><a href="#"><span class="dot"></span> eCommerce</a></li>
+	</ul>
+
+	<li><i class="fa fa-file"></i><a href="#">Layout</a></li>
+	<p class="app">Management</p>
+	<li><i class="fa fa-clone"></i><a href="#">Invoice</a></li>
+	<li><i class="fa fa-user"></i><a href="#">User</a></li>
+	<li><i class="fa fa-shield"></i><a href="#">Permission</a></li>
+	<li><i class="fa fa-file-text"></i><a href="#">Pages</a></li>
+	<li><i class="fa fa-lock"></i><a href="#">Authentications</a></li>
+	</ul>
+</div>
+
+<div class="main">
+	<div class="middle-box">
+		<div class="main-top">
+			<input type="text" class="input" placeholder="Search">
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="box-1">
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-user icons"></i>
+					<p>Team Members</p>
+					<span>33</span>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-bar-chart icons"></i>
+					<p>Team Velocity</p>
+					<span>23</span>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-search icons"></i>
+					<p>Delivered</p>
+					<span>13</span>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-briefcase icons"></i>
+					<p>Task Delivered</p>
+					<span>33</span>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-newspaper-o icons"></i>
+					<p>New Events</p>
+					<span>12</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="table-box">
+			<svg id="line" width="96%" class="chart-svg"></svg>
+		</div>
+	</div>
+
+	<div class="sidebox">
+	<div class="t-sale">
+		<div class="content-box-1">
+			<br/>
+			<p class="head-1">Total Users</p>
+			<div class="right-sidebar">
+				<p class="p-1">Permissions<span style="float: right;">SEE ALL</span></p>
+				<br/>
+
+				<div class="nub-sec">
+					<p class="p2">o</p><p class="head">Mobile Onboarding<br/><span></span>Design</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+
+				<div class="nub-sec">
+					<p class="p2" style="background: #f5d1d1; color: #957272;">g</p><p class="head">Admin Item<br/><span></span>Development</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+				<div class="nub-sec">
+					<p class="p2" style="background: #ffedcb; color: #927b40;">p</p><p class="head">Admin Panel<br/><span></span>Development</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+
+				<div class="nub-sec">
+					<p class="p2">o</p><p class="head">Mobile Onboarding<br/><span></span>Design</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+
+				<div class="nub-sec">
+					<p class="p2" style="background: #f5d1d1; color: #957272;">g</p><p class="head">Admin Item<br/><span></span>Development</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+				<div class="nub-sec">
+					<p class="p2" style="background: #ffedcb; color: #927b40;">p</p><p class="head">Admin Panel<br/><span></span>Development</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+				<div class="nub-sec">
+					<p class="p2">o</p><p class="head">Mobile Onboarding<br/><span></span>Design</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+
+				<div class="nub-sec">
+					<p class="p2" style="background: #f5d1d1; color: #957272;">k</p><p class="head">Admin Item<br/><span></span>Development</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+				<div class="nub-sec">
+					<p class="p2" style="background: #ffedcb; color: #927b40;">p</p><p class="head">Admin Panel<br/><span></span>Development</span></p>
+					<i class="fa fa-ellipsis-h dots"></i>
+				</div>
+
+				<div style="text-align: center;">
+					<button class="btn">Load More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/chart.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".span1").click(function(){
+			$(".dropdown").slideToggle(500);
+		});
+	});
+	$('.sidenav li').click(function(){
+		$('.sidenav li').removeClass("active");
+		$(this).addClass("active");
+	})
+</script>
+
+<script type="text/javascript">
+	$(".menu-icon").click(function(e) {
+        e.preventDefault();
+        $(".menu-icon").toggleClass("menuicon");
+        $(".main").toggleClass("main-width");
+        $(".sidebar").toggleClass("active1");
+        $(".sidenav li a").toggleClass("anchor");
+        $(".sidenav li").toggleClass("lislide");
+        $(".sidenav p").toggleClass("apphide");
+        $(".logo span").toggleClass("headspan");
+        $(".logo").toggleClass("lm");
+
+});
+</script>
+</body>
+</html>

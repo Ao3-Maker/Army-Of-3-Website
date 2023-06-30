@@ -1,0 +1,10 @@
+Test buttons //Add under <div class="login1 form--hidden" id="login">
+
+"
+	<div class="button_test">
+		<button id="demo1" class="button-test1" type="test1">&nbsp;<br>B1<br>&nbsp;</button>
+		<button id="demo2" class="button-test2" type="test2">&nbsp;<br>B2<br>&nbsp;</button>
+		<button id="demo3" class="button-test3" type="test3">&nbsp;<br>B3<br>&nbsp;</button>
+		<br><br><br><hr>
+	</div>
+"

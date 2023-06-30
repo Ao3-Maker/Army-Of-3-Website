@@ -1,0 +1,59 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+hr{
+    border-color:rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100);
+    border-radius:10px;
+}
+.rulescontainer{
+    height:100%;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    background-image:linear-gradient(rgba(50, 50, 50, 0.5), rgba(0,0,0,0.1)), url(images/Ao3_background.jpg);
+    background-position:center;
+    background-size:cover;
+    padding-left:5%;
+    padding-right:5%;
+    z-index:1;
+}
+.rulesblocktit1{
+    position:absolute;
+    border-style:solid;
+    bottom:33.5em;
+    border-radius:10px;
+    border-color:hsl(240, 5%, 8%, 0.918);
+    background-color:hsl(240, 5%, 8%, 0.918);
+    font-size:1.17em;
+    width: 88%;
+    height: 3.54em;
+    color:white;
+}
+.rulesblock1{
+    font-family: Arial;
+    position:absolute;
+    border-style:solid;
+    border:3px solid;
+    bottom:auto;
+    border-radius:10px;
+    border-color:hsla(228, 6%, 10%, 0.918);
+    background-color:hsla(225, 6%, 13%, 0.918);
+    top:80%;
+    left:50%;
+    right:-15em;
+    transform:translate(-50%, -50%);
+    padding:60px;
+    padding-top:110px;
+    overflow: hidden;
+}
+h3{
+    font-size: 1.17em;
+    color:white;
+}
+li{
+    color:#757575;
+    transition: color 0.3s ease;
+}

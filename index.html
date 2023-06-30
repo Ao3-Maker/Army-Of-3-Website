@@ -1,0 +1,176 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <head>
+        <link rel="icon" href="images/Ao3_logo_2.jpg" sizes="32x32">
+        <title>Army Of 3</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div>
+                <a href="index.html"><img class="logo form1_1" src="images/Ao3_logo_2.jpg" width="50" height="50"></a>
+                </div>
+                <nav class="form2_1">
+                    <ul>
+                        <li><a class="navlist" href="staff_team.html">Staff Team</a><text>&nbsp;<span>&#9662;</span></text></li>
+                        <li><a class="navlist" href="rules.html">Rules</a><text>&nbsp;<span>&#9662;</span></text></li>
+                    </ul>
+                    
+                    <div class="form--hidden">
+                    <br><i class="fa-sharp fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-bold" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-italic" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-underline" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-strikethrough" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-subscript" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-superscript" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-link" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-link-slash" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-list-ol" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-list" style="color: #ffffff;"></i><br>
+                    <i class="fa-sharp fa-solid fa-align-left" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-align-center" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-align-right" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-align-justify" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-indent" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-solid fa-outdent" style="color: #ffffff;"></i>
+
+                    <select id="option-button-test" class="option-button">
+                    <option value="H1" style="color: #ffffff;">H1</option>
+                    <option value="H2" style="color: #ffffff;">H2</option>
+                    <option value="H3" style="color: #ffffff;">H3</option>
+                    <option value="H4" style="color: #ffffff;">H4</option>
+                    <option value="H5" style="color: #ffffff;">H5</option>
+                    </select>
+
+                    <select id="fontName" class="option-button">
+                    </select>
+
+                    <select id="fontSize" class="option-button">
+                    </select>
+
+                        <input type="color" class="option-button button-position" id="foreColor"></input>
+                        <input type="color" class="option-button button-position" id="backColor"></input>
+                    </div>
+
+
+                </nav>
+                <div class="login1 form--hidden" id="login">
+                    <form>
+                        <h2 class="form__tit">Log in</h2>
+                        <form class="form1">
+                        <div class="form__message form__message--error"></div>
+                        <div class="form__input-group">
+                            <div class="form1 field">
+                                <div class="email-field">
+                                    <input type="email" class="form__input email" autofocus placeholder="Username or Email">
+                                </div>
+                                <p class="error email-error">
+                                    <i class="bx bx-error-circle error-icon"></i>
+                                    <p class="error-text">Enter a valid Username or Email</p>
+                                </p>
+                                <div class="form__input-group">
+                                    <div class="field">
+                                        <div class="password-field">
+                                            <input type="Password" class="form__input password" autofocus placeholder="Password">
+                                        </div>
+                                        <p class="error email-error">
+                                            <i class="bx bx-error-circle error-icon"></i>
+                                            <p class="error-text">Enter a valid Password</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input form__input-error-message"></div>
+                        </div>
+                        <button class="form__button" type="submit">Continue</button>
+                        <p class="form__text">
+                            <a href="#" class="form__link">Forgot your password?</a>
+                        </p>
+                        <p class="form__text">
+                            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Register</a>
+                        </p>
+                    </form>
+                    </div>
+                    <div class="login2 form--hidden" id="createAccount">
+                        <form class="form1">
+                            <h2 class="form__tit">Register</h2>
+                            <div class="form__message form__message--error"></div>
+                                <div class="form__input-group">
+                                    <input type="text" id="signUpUsername" class="form__input" autofocus placeholder="Username">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <div class="form__input-group">
+                                    <input type="text" class="form__input" autofocus placeholder="Email Address">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                                <div class="form__input-group">
+                                    <input type="Password" name="password1" class="form__input" autofocus placeholder="Password">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                            <div class="form__input-group">
+                                <input type="Passowrd" name="password2" class="form__input" autofocus placeholder="Confirm Password">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <button class="form__button" type="submit">Continue</button>
+                            <p class="form__text">
+                                <a class="form__link"  href="./" id="linkLogin">Do you have an account? Log in</a>
+                            </p>
+                        </form>
+                    </div>
+                    <h2 class="formtit form2_2" id="form"><img class="loginpic form2_3" src="images/login.jpg" width="25" height="25">&nbsp;Log in &nbsp;</h2>
+                    <h2 class="formtit form2_2" id="form2"><img class="loginpic form2_3" src="images/register.jpg" width="25" height="25">&nbsp;Register &nbsp;</h2>
+                    <img class="profilepic form2_4" src="images/profile_icon.jpg" width="40" height="40">
+                    <a class="profilenam form2_5" href="">&nbsp; |Ao3| Maker</a><text class="form2_6">&nbsp;<span>&#9662;</span></text>
+                </div>
+                <video class="smokeeff" id='video1' src="images/Ao3_background_smoke.mp4" muted autoplay loop></video>
+            </div>
+            <div class="blockbac">
+                <div class="blockbox1 form2_7">
+                    <h3 class="blocktit1">General information</h3><br>
+                    <div class="block1_2">
+                        <br>&nbsp;<img class="blockicon1" src="images/file.jpg" width="20" height="20">
+                        <text class="blockdiv1">&nbsp;&#9474;&nbsp;</text>
+                        <a class="blocklink1" href="rules.html">Rules</a>
+                        <img class="blockprof1" src="images/profile_icon.jpg" width="20" height="20">
+                        <a class="blockprof1_2" href="">&nbsp;|Ao3| Maker<br></a>
+                    </div>
+                    <div class="blockspa"><br></div>
+                    <div class="block2 form2_8">
+                        <div class="block2_2">
+                            <br>&nbsp;<img class="blockicon2" src="images/pinned.jpg" width="20" height="20">
+                            <text class="blockdiv2">&nbsp;&#9474;&nbsp;</text>
+                            <a class="blocklink2" href="">Applications</a>
+                            <img class="blockprof2" src="images/profile_icon.jpg" width="20" height="20">
+                            <a class="blockprof2_2" href="">&nbsp;|Ao3| Maker<br></a>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="blockspa"><br></div>
+                        <div class="block3 form2_9">
+                            <div class="block2_3">
+                                <br>&nbsp;<img class="blockicon3" src="images/pinned.jpg" width="20" height="20">
+                                <text class="blockdiv3">&nbsp;&#9474;&nbsp;</text>
+                                <a class="blocklink3" href="">Ban appeals</a>
+                                <img class="blockprof3" src="images/profile_icon.jpg" width="20" height="20">
+                                <a class="blockprof3_2" href="">&nbsp;|Ao3| Maker<br></a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="blockspa"><br></div>
+                            <div class="block4 form2_10">
+                                <div class="block2_4">
+                                    <br>&nbsp;<img class="blockicon4" src="images/pinned.jpg" width="20" height="20">
+                                    <text class="blockdiv4">&nbsp;&#9474;&nbsp;</text>
+                                    <a class="blocklink4" href="">Report</a>
+                                    <img class="blockprof4" src="images/profile_icon.jpg" width="20" height="20">
+                                    <a class="blockprof4_2" href="">&nbsp;|Ao3| Maker<br></a>
+                                </div>
+                            </div>
+                            <div class="blockspa"><br></div>
+                        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
