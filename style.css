@@ -3,6 +3,9 @@
 	padding:0;
 	box-sizing:border-box;
 }
+.selection{
+    user-select: none;
+}
 hr{
     border-color:rgb(100, 100, 100);
     background-color: rgb(100, 100, 100);
@@ -789,5 +792,9 @@ border:3px solid;
     color:#646464;
 }
 .footer-text{
+    color:hsla(0, 0%, 59%);
+    font-weight: bold;
+}
+.footer-text:hover{
     color:hsla(0, 0%, 59%);
 }
