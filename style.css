@@ -1,12 +1,15 @@
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
 }
 hr{
     border-color:rgb(100, 100, 100);
     background-color: rgb(100, 100, 100);
     border-radius:10px;
+}
+.bold{
+    font-weight:bold;
 }
 .option-button{
     color: white;
@@ -110,16 +113,18 @@ a:hover{
     width: 100%;
     min-width: 100%;
     background-image:linear-gradient(rgba(50, 50, 50, 0.5), rgba(0,0,0,0.1)), url(images/Ao3_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position:center;
     background-size:cover;
-    background-position-y: center;
+    background-position-y:center;
     padding-left:5%;
     padding-right:5%;
     z-index:1;
 }
 .login1{
-    font-family: Arial;
-    position:relative;
+    font-family:Arial;
+    position:fixed;
     display:inline-block center;
     text-align:center;
     margin:auto;
@@ -127,26 +132,30 @@ a:hover{
     border-style:solid;
     border-color:hsl(225, 6%, 10%);
     background-color:hsl(225, 6%, 13%);
+    box-shadow:inset 10px 5px 100px hsl(0deg 0% 10.19%), 10px 5px 100px hsl(0, 0%, 0%);
     border-radius:10px;
-    top:115px;
-    right: 100px;
+    top:380px;
     padding:100px;
+    left:50%;
+    transform:translate(-50%, -50%);
     z-index:2;
 }
 .login2{
-    font-family: Arial;
-    position:relative;
+    font-family:Arial;
+    position:fixed;
     display:inline-block center;
     text-align:center;
     margin:auto;
-    border:3px solid;
+    border: 3px solid;
     border-style:solid;
     border-color:hsl(225, 6%, 10%);
     background-color:hsl(225, 6%, 13%);
+    box-shadow: inset 10px 5px 100px hsl(0deg 0% 10.19%), 10px 5px 100px hsl(0, 0%, 0%);
     border-radius:10px;
-    top:70px;
-    right: 115px;
+    top: 380px;
     padding:100px;
+    left:50%;
+    transform:translate(-50%, -50%);
     z-index:2;
 }
 .form--blur1{
@@ -317,7 +326,7 @@ a:hover{
     margin-top:1rem;
 }
 .form__link{
-    color:hsl(228, 6%, 30%);
+    color:#646464;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -333,7 +342,7 @@ a:hover{
     top:0px;
     height:100%;
     min-height:56.25vw;
-    width:177.77777778vh;
+    width:100%;
     min-width:100%;
     opacity:0.6;
     z-index:0;
@@ -444,7 +453,8 @@ text:hover{
     bottom:-9.5em;
     border-radius:10px;
     border-color:hsla(228, 6%, 10%, 0.918);
-    background-color:hsla(225, 6%, 13%, 0.918);
+    background-color:hsla(225, 6%, 13%);
+    box-shadow: inset 10px 5px 100px hsl(0deg 0% 10.19%), 10px 5px 100px hsl(0, 0%, 0%);
     left:50%;
     right:-15em;
     transform:translate(-50%, -50%);
@@ -762,4 +772,23 @@ border:3px solid;
 }
 .blockprof4_2:hover{
     color:#25c059;
+}
+.footer{
+    position:absolute;
+    bottom:-100px;
+    height:100px;
+    width:100%;
+    text-align:center;
+    border:3px solid;
+    border-style:solid;
+    border-left-style:none;
+    border-right-style:none;
+    border-bottom-style:none;
+    background-color:hsla(228, 6%, 10%);
+    border-top-color:hsla(225, 6%, 13%);
+    box-shadow: inset 10px 5px 50px rgb(22, 22, 22), 10px 5px 100px hsl(0, 0%, 0%);
+    color:#646464;
+}
+.footer-text{
+    color:hsla(0, 0%, 59%);
 }
