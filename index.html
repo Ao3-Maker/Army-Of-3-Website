@@ -1,179 +1,793 @@
-<html>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <head>
-        <link rel="icon" href="images/Ao3_logo_2.jpg" sizes="32x32">
-        <title>Army Of 3</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="navbar">
-                <div>
-                <a href="index.html"><img class="logo form1_1" src="images/Ao3_logo_2.jpg" width="50" height="50"></a>
-                </div>
-                <nav class="form2_1">
-                    <ul>
-                        <li><a class="navlist" href=".staff_team.html">Staff Team</a><text>&nbsp;<span>&#9662;</span></text></li>
-                        <li><a class="navlist" href=".rules.html">Rules</a><text>&nbsp;<span>&#9662;</span></text></li>
-                    </ul>
-                    
-                    <div class="form--hidden">
-                    <br><i class="fa-sharp fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-bold" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-italic" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-underline" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-strikethrough" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-subscript" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-superscript" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-link" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-link-slash" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-list-ol" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-list" style="color: #ffffff;"></i><br>
-                    <i class="fa-sharp fa-solid fa-align-left" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-align-center" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-align-right" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-align-justify" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-indent" style="color: #ffffff;"></i>
-                    <i class="fa-sharp fa-solid fa-outdent" style="color: #ffffff;"></i>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+hr{
+    border-color:rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100);
+    border-radius:10px;
+}
+.bold{
+    font-weight:bold;
+}
+.option-button{
+    color: white;
+    background-color:hsla(228, 6%, 20%, 0.918);
+    border-radius:10px;
+    border-style:solid;
+    border:3px solid hsla(228, 6%, 10%, 0.918);
+}
+.button-position{
+    position: relative;
+    top:2px;
+}
+.button_test{
+    position: relative;
+    top:-40px
+}
+.section_test{
+    position: relative;
+    top:-27px;
+    color: white;
+}
+.button-test1{
+    border:3px solid;
+    border-style:solid;
+    font-size:1rem;
+    color: white;
+    background-color:hsla(228, 6%, 20%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    outline-offset: 12px;
+    border-radius:10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 80px;
+}
+.button-test2{
+    border:3px solid;
+    border-style:solid;
+    font-size:1rem;
+    color: white;
+    background-color:hsla(228, 6%, 20%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    outline-offset: 12px;
+    border-radius:10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 80px;
+}
+.button-test3{
+    border:3px solid;
+    border-style:solid;
+    font-size:1rem;
+    color: white;
+    background-color:hsla(228, 6%, 20%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    outline-offset: 12px;
+    border-radius:10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 80px;
+}
+.button-test1:hover{
+    color:white;
+    background-color:hsla(228, 6%, 25%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    transition: background-color 0.3s ease;
+}
+.button-test2:hover{
+    color:white;
+    background-color:hsla(228, 6%, 25%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    transition: background-color 0.3s ease;
+}
+.button-test3:hover{
+    color:white;
+    background-color:hsla(228, 6%, 25%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    transition: background-color 0.3s ease;
+}
+.button-test1:active{
+    transform: scale(0.95);
+}
+.button-test2:active{
+    transform: scale(0.95);
+}
+.button-test3:active{
+    transform: scale(0.95);
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    color:rgb(255, 255, 255);
+}
+.logo{
+    position:relative;
+    z-index:1;
+}
+.container{
+    height:100%;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    background-image:linear-gradient(rgba(50, 50, 50, 0.5), rgba(0,0,0,0.1)), url(images/Ao3_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+    background-position-y:center;
+    padding-left:5%;
+    padding-right:5%;
+    z-index:1;
+}
+.login1{
+    font-family:Arial;
+    position:fixed;
+    display:inline-block center;
+    text-align:center;
+    margin:auto;
+    border:3px solid;
+    border-style:solid;
+    border-color:hsl(225, 6%, 10%);
+    background-color:hsl(225, 6%, 13%);
+    box-shadow:inset 10px 5px 100px hsl(0deg 0% 10.19%), 10px 5px 100px hsl(0, 0%, 0%);
+    border-radius:10px;
+    top:380px;
+    padding:100px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:2;
+}
+.login2{
+    font-family:Arial;
+    position:fixed;
+    display:inline-block center;
+    text-align:center;
+    margin:auto;
+    border: 3px solid;
+    border-style:solid;
+    border-color:hsl(225, 6%, 10%);
+    background-color:hsl(225, 6%, 13%);
+    box-shadow: inset 10px 5px 100px hsl(0deg 0% 10.19%), 10px 5px 100px hsl(0, 0%, 0%);
+    border-radius:10px;
+    top: 380px;
+    padding:100px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:2;
+}
+.form--blur1{
+    position:relative;
+    filter: blur(0.2rem);
 
-                    <select id="option-button-test" class="option-button">
-                    <option value="H1" style="color: #ffffff;">H1</option>
-                    <option value="H2" style="color: #ffffff;">H2</option>
-                    <option value="H3" style="color: #ffffff;">H3</option>
-                    <option value="H4" style="color: #ffffff;">H4</option>
-                    <option value="H5" style="color: #ffffff;">H5</option>
-                    </select>
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur2{
+    position:relative;
+    filter: blur(0.5rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur3{
+    position:relative;
+    filter: blur(0.5rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur4{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur5{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur6{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur7{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur8{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur9{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur10{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--blur11{
+    position:relative;
+    filter: blur(1rem);
+    pointer-events: none;
+    z-index:0;
+}
+.form--hidden{
+    display:none;
+}
+.form__tit{
+    color:white;
+    text-align:center;
+    margin-bottom: 2rem;
+}
+.form__message{
+    text-align:center;
+    margin-bottom: 1rem;
+}
+.form__message--success{
+    color:white;
+}
+.error-icon{
+    position:relative;
+    top:7.1px;
+    color:#25c059;
+}
+.error-text{
+    margin-top:0.6rem;
+    font-size:0.8rem;
+    color:#25c059;
+}
+.form__message--error{
+    margin-top: 0.5rem;
+    color:#25c059;
+}
+.form__input-group{
+    margin: 0rem;
+}
+.form__input{
+    display: block;
+    color: white;
+    background-color:hsla(240, 5%, 8%, 0.918);
+    border-color:hsla(240, 6%, 8%, 0.918);
+    box-sizing: border-box;
+    border-style:solid;
+    border:3px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.form__input:focus{
+    color:#25c059;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.form__input--error{
+    color:#25c059;
+}
+.form__button{
+    display: block;
+    color:white;
+    width:100%;
+    padding:1rem 2rem;
+    font-size:1rem;
+    background-color:hsla(228, 6%, 20%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    box-sizing:border-box;
+    border-style:solid;
+    border-radius:10px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+.form__button1{
+    display: block;
+    color:#25c059;
+    width:15%;
+    font-size:1rem;
+    background-color:hsla(228, 6%, 20%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    border-style:solid;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left:325px;
+    top:-85px;
+}
+.form__button:hover{
+    background-color:hsla(228, 6%, 25%, 0.918);
+    border-color:hsla(228, 6%, 10%, 0.918);
+    transition: background-color 0.3s ease;
+}
+.form__button:active{
+    transform: scale(0.98);
+}
+.form__text{
+    text-align: center;
+    margin-top:1rem;
+}
+.form__link{
+    color:#646464;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.form__link:hover{
+    color:#25c059;
+    transition: color 0.3s ease;
+}
+.smokeeff{
+    position:fixed;
+    padding:0;
+    margin:0;
+    left:0;
+    top:0px;
+    height:100%;
+    min-height:56.25vw;
+    min-width:100%;
+    opacity:0.6;
+    z-index:0;
+}
+.smoke--blur{
+    z-index:1;
+}
+.navbar{
+    height:15vh;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    z-index:1;
+}
+nav{
+    flex:1;
+    padding-left:60px;
+    z-index:1;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:0px 35px;
+    z-index:1;
+}
+.navlist{
+    font-family:Arial;
+    color:white;
+    z-index:1;
+}
+.form{
+    z-index:1;
+}
+.formtit{
+    position:relative;
+    font-size:17px;
+    bottom:4px;
+    font-family:Arial;
+    color:white;
+    z-index:1;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.formtit:hover{
+    font-family:Arial;
+    color:#25c059;
+    cursor: pointer;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
 
-                    <select id="fontName" class="option-button">
-                    </select>
-
-                    <select id="fontSize" class="option-button">
-                    </select>
-
-                        <input type="color" class="option-button button-position" id="foreColor"></input>
-                        <input type="color" class="option-button button-position" id="backColor"></input>
-                    </div>
-
-
-                </nav>
-                <div class="login1 form--hidden" id="login">
-                    <form>
-                        <h2 class="form__tit">Log in</h2>
-                        <form class="form1">
-                        <div class="form__message form__message--error"></div>
-                        <div class="form__input-group">
-                            <div class="form1 field">
-                                <div class="email-field">
-                                    <input type="email" class="form__input email" autofocus placeholder="Username or Email">
-                                </div>
-                                <p class="error email-error">
-                                    <i class="bx bx-error-circle error-icon"></i>
-                                    <p class="error-text form--hidden">Enter a valid Username or Email</p>
-                                </p>
-                                <div class="form__input-group">
-                                    <div class="field">
-                                        <br><div class="password-field">
-                                            <input type="Password" class="form__input password" autofocus placeholder="Password">
-                                        </div>
-                                        <p class="error email-error">
-                                            <i class="bx bx-error-circle error-icon"></i>
-                                            <p class="error-text form--hidden">Enter a valid Password</p>
-                                        </p><br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input form__input-error-message"></div>
-                        </div>
-                        <button class="form__button" type="submit">Continue</button>
-                        <p class="form__text">
-                            <a href="#" class="form__link">Forgot your password?</a>
-                        </p>
-                        <p class="form__text">
-                            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Register</a>
-                        </p>
-                    </form>
-                    </div>
-                    <div class="login2 form--hidden" id="createAccount">
-                        <form class="form1">
-                            <h2 class="form__tit">Register</h2>
-                            <div class="form__message form__message--error"></div>
-                                <div class="form__input-group">
-                                    <input type="text" id="signUpUsername" class="form__input" autofocus placeholder="Username">
-                                    <div class="form__input-error-message"></div>
-                                </div>
-                                <br><div class="form__input-group">
-                                    <input type="text" class="form__input" autofocus placeholder="Email Address">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                                <br><div class="form__input-group">
-                                    <input type="Password" name="password1" class="form__input" autofocus placeholder="Password">
-                                    <div class="form__input-error-message"></div>
-                                </div>
-                                <br><div class="form__input-group">
-                                <input type="Passowrd" name="password2" class="form__input" autofocus placeholder="Confirm Password">
-                                <div class="form__input-error-message"></div>
-                                <br></div>
-                            <button class="form__button" type="submit">Continue</button>
-                            <p class="form__text">
-                                <a class="form__link"  href="./" id="linkLogin">Do you have an account? Log in</a>
-                            </p><br>
-                        </form>
-                    </div>
-                    <h2 class="formtit form2_2" id="form"><img class="loginpic form2_3" src="images/login.jpg" width="25" height="25">&nbsp;Log in &nbsp;</h2>
-                    <h2 class="formtit form2_2 form--hidden" id="form2"><img class="loginpic form2_3" src="images/register.jpg" width="25" height="25">&nbsp;Register &nbsp;</h2>
-                    <img class="profilepic form2_4 form--hidden" src="images/profile_icon.jpg" width="40" height="40">
-                    <a class="profilenam form2_5 form--hidden" href="">&nbsp; |Ao3| Maker</a><text class="form2_6 form--hidden">&nbsp;<span>&#9662;</span></text>
-                </div>
-                <video class="smokeeff" id='video1' src="images/Ao3_background_smoke.mp4" muted autoplay loop></video>
-            </div>
-            <div class="blockbac">
-                <div class="blockbox1 form2_7">
-                    <h3 class="blocktit1">General information</h3><br>
-                    <div class="block1_2">
-                        <br>&nbsp;<img class="blockicon1" src="images/file.jpg" width="20" height="20">
-                        <text class="blockdiv1">&nbsp;&#9474;&nbsp;</text>
-                        <a class="blocklink1" href="">Rules</a>
-                        <img class="blockprof1" src="images/profile_icon.jpg" width="20" height="20">
-                        <a class="blockprof1_2 bold" href="">&nbsp;|Ao3| Maker<br></a>
-                    </div>
-                    <div class="blockspa"><br></div>
-                    <div class="block2 form2_8">
-                        <div class="block2_2">
-                            <br>&nbsp;<img class="blockicon2" src="images/file.jpg" width="20" height="20">
-                            <text class="blockdiv2">&nbsp;&#9474;&nbsp;</text>
-                            <a class="blocklink2" href="">Applications</a>
-                            <img class="blockprof2" src="images/profile_icon.jpg" width="20" height="20">
-                            <a class="blockprof2_2 bold" href="">&nbsp;|Ao3| Maker<br></a>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="blockspa"><br></div>
-                        <div class="block3 form2_9">
-                            <div class="block2_3">
-                                <br>&nbsp;<img class="blockicon3" src="images/file.jpg" width="20" height="20">
-                                <text class="blockdiv3">&nbsp;&#9474;&nbsp;</text>
-                                <a class="blocklink3" href="">Ban appeals</a>
-                                <img class="blockprof3" src="images/profile_icon.jpg" width="20" height="20">
-                                <a class="blockprof3_2 bold" href="">&nbsp;|Ao3| Maker<br></a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="blockspa"><br></div>
-                            <div class="block4 form2_10">
-                                <div class="block2_4">
-                                    <br>&nbsp;<img class="blockicon4" src="images/file.jpg" width="20" height="20">
-                                    <text class="blockdiv4">&nbsp;&#9474;&nbsp;</text>
-                                    <a class="blocklink4" href="">Report</a>
-                                    <img class="blockprof4" src="images/profile_icon.jpg" width="20" height="20">
-                                    <a class="blockprof4_2 bold" href="">&nbsp;|Ao3| Maker<br></a>
-                                </div>
-                            </div>
-                            <div class="blockspa"><br></div>
-                        </div>
-                        <div class="footer">
-                        <br><br><p>Copyright © <b class="footer-text">Army Of 3</b>. All rights reserved.</p></div>
-                    </div>
-        <script src="main.js"></script>
-    </body>
-</html>
+.loginpic{
+    position:relative;
+    bottom:-7px;
+    z-index:1;
+}
+.profilepic{
+    position:relative;
+    bottom:-1px;
+    z-index:1;
+}
+text{
+    cursor: pointer;
+    color:rgb(100, 100, 100);
+    z-index:1;
+}
+span{
+    display:inline-block;
+    -webkit-transform: scale(1.3, 1);
+    -moz-transform: scale(1.3, 1);
+    -ms-transform: scale(1.3, 1);
+    --transform: scale(1.3, 1);
+    transform: scale(1.3, 1);
+}
+text:hover{
+    color:rgb(150, 150, 150);
+    z-index:1;
+}
+.profilenam{
+    font-family:Arial;
+    font-weight: bold;
+    color:#25c059;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    z-index:1;
+    display: hidden;
+}
+.profilenam:hover{
+    cursor: pointer;
+    color:white;
+}
+.blockbac{
+    font-family:Arial;
+}
+.blockbox1{
+    position:absolute;
+    border-style:solid;
+    border:3px solid;
+    bottom:-9.5em;
+    border-radius:10px;
+    border-color:hsla(228, 6%, 10%, 0.918);
+    background-color:hsla(225, 6%, 13%);
+    box-shadow: inset 10px 5px 100px hsl(0deg 0% 10.19%), 10px 5px 100px hsl(0, 0%, 0%);
+    left:50%;
+    right:-15em;
+    transform:translate(-50%, -50%);
+    padding:60px;
+}
+.blocktit1{
+    color:white;
+}
+.block1_2{
+    border:3px solid;
+    border-style:solid;
+    background-color:hsla(240, 5%, 8%, 0.918);
+    border-color:hsla(240, 6%, 8%, 0.918);
+    outline-offset:12px;
+    border-radius:10px;
+    min-height:67px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block1_2:hover{
+    -moz-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    -o-transform: scale(1.01.5);
+    -ms-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    transform: scale(1.02);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.blockicon1{
+    position:relative;
+    bottom:-5px;
+    left:10px;
+}
+.blockdiv1{
+    color:white;
+    position:relative;
+    left:10px;
+}
+.blockdiv1:hover{
+    color:white;
+}
+.blocklink1{
+    color:white;
+    font-family:Arial;
+    position:relative;
+    left:10px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blocklink1:hover{
+    color:#25c059;
+}
+.blockprof1{
+    position:relative;
+    float:right;
+    bottom:-6px;
+    left:-113px;
+}
+.blockprof1_2{
+    color:white;
+    position: relative;
+    float:right;
+    bottom:-6px;
+    left:3px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blockprof1_2:hover{
+    color:#25c059;
+}
+.blockspa{
+    margin:-5px;
+}
+.block2{
+    border: 3px solid;
+    border-style: solid;
+    background-color: hsla(240, 5%, 8%, 0.918);
+    border-color: hsla(240, 6%, 8%, 0.918);
+    outline-offset: 12px;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block2_2{
+    border:3px solid;
+    border-style:solid;
+    background-color:hsla(240, 5%, 8%, 0.918);
+    border-color:hsla(240, 6%, 8%, 0.918);
+    outline-offset:12px;
+    border-radius:10px;
+    min-height:67px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block2_2:hover{
+    -moz-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    -o-transform: scale(1.01.5);
+    -ms-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    transform: scale(1.02);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.blockicon2{
+    position:relative;
+    bottom:-4.5px;
+    left:10px;
+}
+.blockdiv2{
+    color:white;
+    position:relative;
+    left:10px;
+}
+.blockdiv2:hover{
+    color:white;
+}
+.blocklink2{
+    color:white;
+    font-family:Arial;
+    position:relative;
+    left:10px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blocklink2:hover{
+    color:#25c059;
+}
+.blockprof2{
+    position:relative;
+    float:right;
+    bottom:-6px;
+    left:-110px;
+}
+.blockprof2_2{
+    color:white;
+    position: relative;
+    float:right;
+    bottom:-6px;
+    left:6px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blockprof2_2:hover{
+    color:#25c059;
+}
+.block3{
+    border: 3px solid;
+    border-style: solid;
+    background-color: hsla(240, 5%, 8%, 0.918);
+    border-color: hsla(240, 6%, 8%, 0.918);
+    outline-offset: 12px;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block2_3{
+    border:3px solid;
+    border-style:solid;
+    background-color:hsla(240, 5%, 8%, 0.918);
+    border-color:hsla(240, 6%, 8%, 0.918);
+    outline-offset:12px;
+    border-radius:10px;
+    min-height:67px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block2_3:hover{
+    -moz-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    -o-transform: scale(1.01.5);
+    -ms-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    transform: scale(1.02);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.blockicon3{
+    position:relative;
+    bottom:-4.5px;
+    left:10px;
+}
+.blockdiv3{
+    color:white;
+    position:relative;
+    left:10px;
+}
+.blockdiv3:hover{
+    color:white;
+}
+.blocklink3{
+    color:white;
+    font-family:Arial;
+    position:relative;
+    left:10px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blocklink3:hover{
+    color:#25c059;
+}
+.blockprof3{
+    position:relative;
+    float:right;
+    bottom:-6px;
+    left:-110px;
+}
+.blockprof3_2{
+    color:white;
+    position: relative;
+    float:right;
+    bottom:-6px;
+    left:6px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blockprof3_2:hover{
+    color:#25c059;
+}
+.block4{
+    border: 3px solid;
+    border-style: solid;
+    background-color: hsla(240, 5%, 8%, 0.918);
+    border-color: hsla(240, 6%, 8%, 0.918);
+    outline-offset: 12px;
+    border-radius: 10px;
+    bottom:1px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block2_4{
+border:3px solid;
+    border-style:solid;
+    background-color:hsla(240, 5%, 8%, 0.918);
+    border-color:hsla(240, 6%, 8%, 0.918);
+    outline-offset:12px;
+    border-radius:10px;
+    min-height:67px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block2_4:hover{
+    -moz-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    -o-transform: scale(1.01.5);
+    -ms-transform: scale(1.01.5);
+    -webkit-transform: scale(1.01.5);
+    transform: scale(1.02);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.blockicon4{
+    position:relative;
+    bottom:-4.5px;
+    left:10px;
+}
+.blockdiv4{
+    color:white;
+    position:relative;
+    left:10px;
+}
+.blockdiv4:hover{
+    color:white;
+}
+.blocklink4{
+    color:white;
+    font-family:Arial;
+    position:relative;
+    left:10px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blocklink4:hover{
+    color:#25c059;
+}
+.blockprof4{
+    position:relative;
+    float:right;
+    bottom:-6px;
+    left:-110px;
+}
+.blockprof4_2{
+    color:white;
+    position: relative;
+    float:right;
+    bottom:-6px;
+    left:6px;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.blockprof4_2:hover{
+    color:#25c059;
+}
+.footer{
+    position:absolute;
+    bottom:-100px;
+    height:100px;
+    width:100%;
+    text-align:center;
+    border:3px solid;
+    border-style:solid;
+    border-left-style:none;
+    border-right-style:none;
+    border-bottom-style:none;
+    background-color:hsla(228, 6%, 10%);
+    border-top-color:hsla(225, 6%, 13%);
+    box-shadow: inset 10px 5px 50px rgb(22, 22, 22), 10px 5px 100px hsl(0, 0%, 0%);
+    color:#646464;
+}
+.footer-text{
+    color:hsla(0, 0%, 59%);
+}
